@@ -14,7 +14,8 @@ export class PostsService {
   constructor() { }
 
   readonly baseUrl = 'https://angular.dev/assets/tutorials/common';
-  url = 'http://localhost:3000/locations';
+  //url = 'http://localhost:3000/locations';
+  url = 'https://json-homes.vercel.app/locations';
 
   getAllPosts(): Observable<Postlist[]> {
     return this.http.get<Postlist[]>(this.url)
